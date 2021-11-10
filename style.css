@@ -4,6 +4,7 @@
 .menu {
   display: flex;
   justify-content: flex-end;
+  margin-top: 1rem;
 }
 .menu_submenu {
   display: flex;
@@ -20,7 +21,10 @@
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 700;
-  color: #000000;
+  color: #333333;
+}
+.menu_submenu-2 a:hover {
+  border-bottom: 1px solid #333333;
 }
 .menu_submenu-icon {
   display: flex;
