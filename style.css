@@ -1,5 +1,11 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 0.8rem;
+}
+body {
+  display: grid;
+  justify-content: unset;
 }
 
 /* header da página */
@@ -21,23 +27,23 @@
 }
 .menu_submenu-2 a {
   text-decoration: none;
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
   font-weight: 700;
   color: #333333;
 }
 .menu_submenu-2 a:hover {
-  border-bottom: 1px solid #333333;
+  text-decoration: underline;
 }
 .menu_submenu-icon {
   display: flex;
   gap: 1rem;
-  padding-right: 0.6rem;
+  padding-right: 1rem;
 }
 
 
 /* section da página */
 section {
-  display: flex;
+  display: grid;
   justify-content: center;
   margin-top: 8.5rem;
 }
@@ -45,13 +51,13 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
-
 .search {
   display: flex;
   justify-content: center;
 }
-
 .search_camp {
   display: flex;
   align-items: center;
@@ -64,12 +70,10 @@ section {
 .search_camp:hover {
   box-shadow: 0px 1px 5px #999999;
 }
-
 .search_lupa {
   display: flex;
   cursor: pointer;
 }
-
 .search_input {
   display: flex;
 }
@@ -80,14 +84,11 @@ section {
   width: 25rem;
   margin-left: -1.5rem;
 }
-
 .search_support {
   display: flex;
   align-items: baseline;
   gap: 1rem;
 }
-
-
 .search_submit {
   display: flex;
   justify-content: center;
@@ -98,7 +99,6 @@ section {
 .luck {
   text-decoration: none;
   background-color: #EEEEEE;
-  font-size: 0.8rem;
 }
 .search_submit input, 
 .luck {
@@ -113,4 +113,45 @@ section {
 }
 .luck:hover {
   background-color: #CCCCCC;
+}
+
+
+/* footer da página */
+footer {
+  display: flex;
+  justify-content: unset;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.footer_brasil {
+  border-top: 1px solid #CCCCCC;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+.footer_information {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #CCCCCC;
+  background-color: #EEEEEE;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.footer_information a {
+  text-decoration: none;
+  color: #333333;
+}
+.footer_information a:hover {
+  text-decoration: underline;
+}
+.footer_information-options--one,
+.footer_information-options--two {
+  display: flex;
+  gap: 1.6rem;
 }
